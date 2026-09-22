@@ -1,5 +1,5 @@
 // Paste your Vimeo URL here.
-// Example: const VIMEO_URL = "https://vimeo.com/123456789";
+// Example: const VIMEO_URL = "https://vimeo.com/1229042226?share=copy&fl=sv&fe=ci";
 const VIMEO_URL = "";
 
 function getVimeoId(url) {
