@@ -31,3 +31,8 @@ Replace any of those files with another image using the same filename and GitHub
 
 ## Deployment
 Commit the complete project, including the `assets/` folder, to the GitHub Pages repository.
+
+
+Image slots:
+- assets/giveaway-9x16.jpg — 900x1600 (9:16)
+- assets/proof-1.jpg, proof-2.jpg, proof-3.jpg — 1600x900 (16:9). These are displayed at their full source ratio without cropping.
