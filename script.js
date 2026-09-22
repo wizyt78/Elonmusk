@@ -1,25 +1,4 @@
-// Paste your Vimeo URL here.
-// Example: const VIMEO_URL = "https://vimeo.com/1229042226?share=copy&fl=sv&fe=ci";
-const VIMEO_URL = "";
-
-function getVimeoId(url) {
-  const match = String(url || "").match(/vimeo\.com\/(?:video\/)?(\d+)/);
-  return match ? match[1] : null;
-}
-
-function mountVimeo() {
-  const frame = document.getElementById("vimeoFrame");
-  const id = getVimeoId(VIMEO_URL);
-  if (!frame || !id) return; // The hero stays clean until a real Vimeo URL is supplied.
-
-  const iframe = document.createElement("iframe");
-  iframe.src = `https://player.vimeo.com/video/${id}?autoplay=1&muted=1&loop=1&autopause=0&title=0&byline=0&portrait=0&playsinline=1`;
-  iframe.allow = "autoplay; fullscreen; picture-in-picture";
-  iframe.allowFullscreen = true;
-  iframe.title = "Featured video";
-  frame.replaceChildren(iframe);
-}
-mountVimeo();
+// Vimeo is embedded directly in the hero using Vimeo's official embed code.
 
 // Keep the complete 15-comment collection available.
 const seeMore = document.getElementById("seeMoreComments");
