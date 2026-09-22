@@ -1,20 +1,22 @@
-# AL QABAS DIGITAL — GitHub Pages
+# Vantage Capital premium site
 
-Upload these files to the repository root:
-- index.html
-- styles.css
-- script.js
-- README.md
-- hero-image.jpg
-- comment-1.jpg
-- comment-2.jpg
+## Files
+- `index.html` — English-only premium website
+- `styles.css` — responsive design
+- `script.js` — Vimeo hero player and comment-card interactions
+- `assets/` — 15 customer comment images plus giveaway/proof image slots
 
-### Image selection
-The page includes image pickers for the report image and both comment images. Choosing an image from the phone/computer immediately previews it on the page without reloading.
+## Vimeo
+Open `script.js` and set:
+`const VIMEO_URL = "https://vimeo.com/YOUR_VIDEO_ID";`
 
-A static GitHub Pages website cannot permanently write a newly selected image back into the GitHub repository. Permanent publishing requires replacing/committing the image file in GitHub or using a secure backend/storage service.
+The hero uses the Vimeo player with muted autoplay, looping and inline playback.
 
-### Editing
-Translations and country codes are in `script.js`. Arabic is the first/default language; if a visitor chooses English, that choice is remembered.
+## Images
+- `assets/giveaway-9x16.svg` — 9:16 giveaway image slot
+- `assets/proof-1-16x9.svg`
+- `assets/proof-2-16x9.svg`
+- `assets/proof-3-16x9.svg`
+- `assets/comment-1.jpg` through `assets/comment-15.jpg` — all 15 comment images
 
-Use accurate claims, authorized images/branding, genuine testimonials, and a truthful support status on a live site.
+Replace the giveaway/proof image slots with the corresponding supplied images when available, keeping the filenames or updating the paths in `index.html`.
